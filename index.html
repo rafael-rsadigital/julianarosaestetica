@@ -68,7 +68,7 @@
 
         body {
             font-family: 'Jost', sans-serif;
-            color: #2E2925; /* Texto principal em elegante cinza escuro quente/bronzeado */
+            color: #2E2925; /* Texto principal em cinza escuro quente/bronze */
             min-height: 100vh;
             min-height: -webkit-fill-available;
             overflow-x: hidden;
@@ -77,11 +77,11 @@
             align-items: center;
             justify-content: flex-start;
             position: relative;
-            background-color: #FAFAF9; /* Fundo limpo, nobre e levemente aquecido */
+            background-color: #FFFFFF; /* Fundo alterado para branco absoluto para máxima nitidez */
             margin: 0;
         }
 
-        /* Container Principal que funciona como o Card Unificado de ponta a ponta */
+        /* Contentor Principal que funciona como o Card Unificado de ponta a ponta */
         .container-wrapper {
             width: 100%;
             max-width: 420px;
@@ -99,7 +99,7 @@
             background: #FFFFFF;
             border-left: 1px solid rgba(197, 160, 89, 0.15); /* Borda em tom ouro suave */
             border-right: 1px solid rgba(197, 160, 89, 0.15);
-            box-shadow: 0 0 40px rgba(197, 160, 89, 0.08); /* Sombra leve com dispersão dourada */
+            box-shadow: 0 0 45px rgba(197, 160, 89, 0.12); /* Sombra otimizada para destacar o card no fundo 100% branco */
         }
 
         /* Conteúdo Interno com Proteção de Margem para Elementos Soltos */
@@ -123,17 +123,17 @@
         .logo-img {
             width: 100%;
             height: auto;
-            max-height: 180px; /* Mantém a proporção ampliada perfeita para a marca */
+            max-height: 180px; /* Mantém a proporção perfeita para a marca */
             object-fit: contain;
             filter: drop-shadow(0px 4px 8px rgba(197, 160, 89, 0.12)); /* Sombra suave para a logo dourada */
         }
 
         h1 {
             font-family: 'Cormorant Garamond', serif !important;
-            font-size: 1.15rem;
-            line-height: 1.4;
-            letter-spacing: 0.06em;
-            color: #2E2925; /* Tom bronze charcoal para excelente contraste */
+            font-size: 1.35rem; /* Fonte aumentada para melhor leitura e imponência */
+            line-height: 1.3;
+            letter-spacing: 0.05em;
+            color: #2E2925; /* Tom bronze escuro para excelente contraste */
             font-weight: 400;
             text-align: center;
             margin: 0;
@@ -174,7 +174,7 @@
             box-shadow: 0 2px 6px rgba(197, 160, 89, 0.05);
         }
 
-        /* Transição otimizada para mobile com translateY */
+        /* Transição otimizada para dispositivos móveis com translateY */
         .action-btn:hover, .action-btn:active {
             background: rgba(197, 160, 89, 0.08); /* Leve toque dourado de fundo */
             border-color: rgba(197, 160, 89, 0.8);
@@ -268,7 +268,7 @@
             justify-content: center;
             width: 100%;
             background: linear-gradient(135deg, #C5A059, #D4AF37); /* Degradê dourado metálico luxuoso */
-            color: #FFFFFF; /* Texto em branco absoluto de alto contraste */
+            color: #FFFFFF; /* Texto em branco de alto contraste */
             font-family: 'Jost', sans-serif;
             font-size: 0.78rem;
             font-weight: 600;
@@ -283,7 +283,7 @@
             margin-top: 12px;
             box-shadow: 0 4px 12px rgba(197, 160, 89, 0.25);
             text-align: center;
-            white-space: nowrap; /* Impede quebra de linha em telas ultra-compactas */
+            white-space: nowrap; /* Impede quebra de linha em ecrãs estreitos */
         }
 
         /* Hover do CTA Dourado */
@@ -295,7 +295,7 @@
 
         footer {
             width: 100%;
-            background: #2E2925; /* Contraste elegante: rodapé escuro remetendo a marcas de alto padrão */
+            background: #2E2925; /* Contraste elegante: rodapé escuro */
             backdrop-filter: blur(6px);
             -webkit-backdrop-filter: blur(6px);
             padding: 24px 20px;
@@ -318,7 +318,7 @@
             font-size: 0.76rem;
             display: block;
             margin-bottom: 6px;
-            color: #C5A059; /* Destaca a assinatura da profissional em ouro */
+            color: #C5A059; /* Assinatura da profissional em ouro */
         }
 
         .footer-address-wrapper {
@@ -349,7 +349,7 @@
 
 <body>
 
-    <!-- Container Centralizado do Mini Site (Footer embutido no fluxo natural) -->
+    <!-- Container Centralizado do Mini Site (Footer integrado naturalmente) -->
     <div class="container-wrapper">
         
         <!-- Conteúdo Superior e Centralizado -->
@@ -480,7 +480,7 @@
     </div>
 
     <script>
-        // Função para Abrir/Fechar o Acordeão de Serviços de maneira fluida e gerenciar estados ARIA
+        // Função para Abrir/Fechar o Acordeão de Serviços e gerir estados ARIA
         function toggleServices() {
             const accordion = document.getElementById('servicesAccordion');
             const arrow = document.getElementById('servicesArrow');
@@ -493,18 +493,16 @@
                 btn.setAttribute('aria-expanded', 'false');
             } else {
                 accordion.classList.add('open');
-                // Atribui o scrollHeight para garantir transição suave até o tamanho total real
                 accordion.style.maxHeight = accordion.scrollHeight + 'px';
                 arrow.style.transform = 'rotate(180deg)';
                 btn.setAttribute('aria-expanded', 'true');
             }
         }
 
-        // Fallback dinâmico sofisticado inspirado na monograma JR e gradientes dourados reais
+        // Fallback dinâmico inspirado na monograma JR com gradientes dourados
         function handleLogoFallback() {
             const logo = document.getElementById('logoImg');
             if (logo) {
-                // Gera dinamicamente um monograma de texto transparente baseado na logo original com tons em gradiente
                 logo.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120" width="100%25" height="100%25"><defs><linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="%23C5A059"/><stop offset="50%" stop-color="%23E5C07B"/><stop offset="100%" stop-color="%239A7B3E"/></linearGradient></defs><text x="150" y="45" font-family="Cormorant Garamond, serif" font-size="44" fill="url(%23gold)" font-weight="bold" text-anchor="middle" letter-spacing="3">JR</text><text x="150" y="80" font-family="Cormorant Garamond, serif" font-size="20" fill="%232E2925" text-anchor="middle" letter-spacing="1" font-weight="bold">Juliana Rosa</text><text x="150" y="102" font-family="Jost, sans-serif" font-size="9" fill="%239A7B3E" text-anchor="middle" letter-spacing="3" font-weight="500">ESTÉTICA AVANÇADA</text></svg>';
             }
         }
