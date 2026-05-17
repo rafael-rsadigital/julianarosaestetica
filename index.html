@@ -8,6 +8,9 @@
     <!-- Favicon Oficial -->
     <link rel="icon" type="image/png" href="/img/favicon.png">
 
+    <!-- Preload da Logomarca para Melhorar LCP -->
+    <link rel="preload" as="image" href="img/logotipo-juliana-rosa-estetica-e-depilacao-a-laser.png">
+
     <!-- Meta Tags Estratégicas de SEO Local -->
     <meta name="description" content="Juliana Rosa Estética Avançada em Mogi das Cruzes: depilação a laser, estética facial e corporal, lifting, drenagem pós-operatório e gestantes. Agende seu horário.">
     
@@ -22,7 +25,7 @@
     <meta property="og:description" content="Estética de excelência e alta tecnologia em Mogi das Cruzes. Agende sua sessão de forma personalizada!">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://julianarosaestetica.vercel.app/">
-    <meta property="og:image" content="https://julianarosaestetica.vercel.app/img/clinica-reali-capa.jpg">
+    <meta property="og:image" content="https://julianarosaestetica.vercel.app/img/juliana-rosa-capa.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
@@ -30,7 +33,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Juliana Rosa | Estética Avançada">
     <meta name="twitter:description" content="Sua melhor versão com tratamentos de alta performance em Mogi das Cruzes.">
-    <meta name="twitter:image" content="https://julianarosaestetica.vercel.app/img/clinica-reali-capa.jpg">
+    <meta name="twitter:image" content="https://julianarosaestetica.vercel.app/img/juliana-rosa-capa.jpg">
 
     <!-- Google Fonts Gratuitas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -94,12 +97,10 @@
             padding: 40px 0 0 0;
             position: relative;
             box-sizing: border-box;
-            
-            /* Efeito Glassmorphism Claro Premium */
             background: #FFFFFF;
             border-left: 1px solid rgba(197, 160, 89, 0.15); /* Borda em tom ouro suave */
             border-right: 1px solid rgba(197, 160, 89, 0.15);
-            box-shadow: 0 0 45px rgba(197, 160, 89, 0.12); /* Sombra otimizada para destacar o card no fundo 100% branco */
+            box-shadow: 0 0 30px rgba(197, 160, 89, 0.08); /* Sombra refinada e sem "glow" excessivo em AMOLED */
         }
 
         /* Conteúdo Interno com Proteção de Margem para Elementos Soltos */
@@ -156,8 +157,6 @@
             margin-bottom: 12px;
             background: rgba(255, 255, 255, 0.8);
             border: 1px solid rgba(197, 160, 89, 0.35); /* Borda dourada translúcida */
-            backdrop-filter: blur(4px);
-            -webkit-backdrop-filter: blur(4px);
             color: #C5A059; /* Texto em tom dourado/champanhe sofisticado */
             font-family: 'Jost', sans-serif;
             font-size: 0.9rem;
@@ -172,6 +171,7 @@
             cursor: pointer;
             box-sizing: border-box;
             box-shadow: 0 2px 6px rgba(197, 160, 89, 0.05);
+            /* Removido o backdrop-filter por redundância em fundo opaco (melhora performance) */
         }
 
         /* Transição otimizada para dispositivos móveis com translateY */
@@ -212,11 +212,10 @@
             transition: max-height 0.4s ease;
             background: rgba(253, 251, 247, 0.95); /* Off-white luxuoso */
             border: 1px solid rgba(197, 160, 89, 0.0); /* Invisível por padrão */
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
             border-radius: 16px;
             box-sizing: border-box;
             margin-bottom: 0;
+            /* Removido backdrop-filter para otimização de CPU/GPU mobile */
         }
 
         .accordion-content.open {
@@ -296,13 +295,12 @@
         footer {
             width: 100%;
             background: #2E2925; /* Contraste elegante: rodapé escuro */
-            backdrop-filter: blur(6px);
-            -webkit-backdrop-filter: blur(6px);
             padding: 24px 20px;
             text-align: center;
             border-top: 1px solid rgba(197, 160, 89, 0.2);
             margin-top: 48px;
             box-sizing: border-box;
+            /* Removido backdrop-filter para ganho de performance de scrolling */
         }
 
         .footer-content {
