@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juliana Rosa | Estética Avançada e Depilação a Laser – Mogi das Cruzes</title>
+    
+    <!-- Favicon Oficial -->
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    <!-- Meta Tags Estratégicas de SEO Local -->
+    <meta name="description" content="Juliana Rosa Estética Avançada em Mogi das Cruzes: depilação a laser, estética facial e corporal, lifting, drenagem pós-operatório e gestantes. Agende seu horário.">
+    
+    <!-- Cor de Tema da Interface do Navegador (Theme Color - Luxo Branco) -->
+    <meta name="theme-color" content="#FFFFFF">
+
+    <!-- URL Canonicalizada Oficial para impedir desvio de autoridade -->
+    <link rel="canonical" href="https://julianarosaestetica.vercel.app/">
+
+    <!-- Open Graph (Redes Sociais & WhatsApp Preview) -->
+    <meta property="og:title" content="Juliana Rosa | Estética Avançada e Depilação a Laser">
+    <meta property="og:description" content="Estética de excelência e alta tecnologia em Mogi das Cruzes. Agende sua sessão de forma personalizada!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://julianarosaestetica.vercel.app/">
+    <meta property="og:image" content="https://julianarosaestetica.vercel.app/img/clinica-reali-capa.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Juliana Rosa | Estética Avançada">
+    <meta name="twitter:description" content="Sua melhor versão com tratamentos de alta performance em Mogi das Cruzes.">
+    <meta name="twitter:image" content="https://julianarosaestetica.vercel.app/img/clinica-reali-capa.jpg">
+
+    <!-- Google Fonts Gratuitas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Schema.org JSON-LD (Marcação de Dados Estruturados de Negócio Local para Salão de Beleza/Estética) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BeautySalon",
+      "name": "Juliana Rosa Estética Avançada",
+      "url": "https://julianarosaestetica.vercel.app/",
+      "image": "https://julianarosaestetica.vercel.app/img/logotipo-juliana-rosa-estetica-e-depilacao-a-laser.png",
+      "telephone": "+55-11-97892-4414",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Sen. Dantas, 582",
+        "addressLocality": "Mogi das Cruzes",
+        "addressRegion": "SP",
+        "postalCode": "08710-690",
+        "addressCountry": "BR"
+      },
+      "sameAs": [
+        "https://www.instagram.com/juliana_rosaestetica/"
+      ]
+    }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+            height: -webkit-fill-available;
+        }
+
+        body {
+            font-family: 'Jost', sans-serif;
+            color: #2E2925; /* Texto principal em elegante cinza escuro quente/bronzeado */
+            min-height: 100vh;
+            min-height: -webkit-fill-available;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            position: relative;
+            background-color: #FAFAF9; /* Fundo limpo, nobre e levemente aquecido */
+            margin: 0;
+        }
+
+        /* Container Principal que funciona como o Card Unificado de ponta a ponta */
+        .container-wrapper {
+            width: 100%;
+            max-width: 420px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Empurra o rodapé para a base naturalmente */
+            align-items: center;
+            z-index: 2;
+            padding: 40px 0 0 0;
+            position: relative;
+            box-sizing: border-box;
+            
+            /* Efeito Glassmorphism Claro Premium */
+            background: #FFFFFF;
+            border-left: 1px solid rgba(197, 160, 89, 0.15); /* Borda em tom ouro suave */
+            border-right: 1px solid rgba(197, 160, 89, 0.15);
+            box-shadow: 0 0 40px rgba(197, 160, 89, 0.08); /* Sombra leve com dispersão dourada */
+        }
+
+        /* Conteúdo Interno com Proteção de Margem para Elementos Soltos */
+        .content-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .logo-container {
+            width: 85%;
+            margin-bottom: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo-img {
+            width: 100%;
+            height: auto;
+            max-height: 180px; /* Mantém a proporção ampliada perfeita para a marca */
+            object-fit: contain;
+            filter: drop-shadow(0px 4px 8px rgba(197, 160, 89, 0.12)); /* Sombra suave para a logo dourada */
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', serif !important;
+            font-size: 1.15rem;
+            line-height: 1.4;
+            letter-spacing: 0.06em;
+            color: #2E2925; /* Tom bronze charcoal para excelente contraste */
+            font-weight: 400;
+            text-align: center;
+            margin: 0;
+            padding: 0 16px;
+        }
+
+        /* Divisor Dourado Nobre */
+        .clinical-divider {
+            width: 35px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #C5A059, transparent);
+            margin: 20px 0 24px 0;
+        }
+
+        .action-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 85%;
+            margin-bottom: 12px;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(197, 160, 89, 0.35); /* Borda dourada translúcida */
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            color: #C5A059; /* Texto em tom dourado/champanhe sofisticado */
+            font-family: 'Jost', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 400;
+            letter-spacing: 0.12em;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 14px 24px;
+            border-radius: 10px; /* Cantos arredondados suavizados */
+            transition: all 0.3s ease;
+            text-decoration: none;
+            cursor: pointer;
+            box-sizing: border-box;
+            box-shadow: 0 2px 6px rgba(197, 160, 89, 0.05);
+        }
+
+        /* Transição otimizada para mobile com translateY */
+        .action-btn:hover, .action-btn:active {
+            background: rgba(197, 160, 89, 0.08); /* Leve toque dourado de fundo */
+            border-color: rgba(197, 160, 89, 0.8);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(197, 160, 89, 0.15);
+        }
+
+        /* Ajustes específicos de layout para o botão do Accordion */
+        .services-btn {
+            justify-content: space-between;
+        }
+
+        .services-btn span:first-child {
+            flex-grow: 1;
+            padding-left: 24px;
+        }
+
+        .arrow-icon {
+            transition: transform 0.3s ease;
+            display: inline-block;
+            font-size: 0.8rem;
+        }
+
+        .accordion-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .accordion-content {
+            width: 85%;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            background: rgba(253, 251, 247, 0.95); /* Off-white luxuoso */
+            border: 1px solid rgba(197, 160, 89, 0.0); /* Invisível por padrão */
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-radius: 16px;
+            box-sizing: border-box;
+            margin-bottom: 0;
+        }
+
+        .accordion-content.open {
+            max-height: 700px;
+            border: 1px solid rgba(197, 160, 89, 0.25);
+            margin-bottom: 12px;
+            box-shadow: 0 4px 15px rgba(197, 160, 89, 0.06);
+        }
+
+        .accordion-inner {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .category-block {
+            text-align: left;
+            border-bottom: 1px solid rgba(197, 160, 89, 0.1);
+            padding-bottom: 8px;
+        }
+
+        .category-block:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .category-title {
+            font-family: 'Jost', sans-serif;
+            font-size: 0.72rem;
+            letter-spacing: 0.1em;
+            color: #9A7B3E; /* Tom dourado profundo */
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .category-text {
+            font-family: 'Jost', sans-serif;
+            font-size: 0.82rem;
+            color: #4A443F; /* Cinza suave e legível */
+            line-height: 1.4;
+            margin-top: 4px;
+        }
+
+        /* Botão de Destaque CTA em Degradê Ouro dentro do Painel de Serviços */
+        .accordion-cta-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background: linear-gradient(135deg, #C5A059, #D4AF37); /* Degradê dourado metálico luxuoso */
+            color: #FFFFFF; /* Texto em branco absoluto de alto contraste */
+            font-family: 'Jost', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 12px 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            cursor: pointer;
+            box-sizing: border-box;
+            margin-top: 12px;
+            box-shadow: 0 4px 12px rgba(197, 160, 89, 0.25);
+            text-align: center;
+            white-space: nowrap; /* Impede quebra de linha em telas ultra-compactas */
+        }
+
+        /* Hover do CTA Dourado */
+        .accordion-cta-btn:hover, .accordion-cta-btn:active {
+            background: linear-gradient(135deg, #D4AF37, #E5C07B);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 20px rgba(197, 160, 89, 0.40);
+        }
+
+        footer {
+            width: 100%;
+            background: #2E2925; /* Contraste elegante: rodapé escuro remetendo a marcas de alto padrão */
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            padding: 24px 20px;
+            text-align: center;
+            border-top: 1px solid rgba(197, 160, 89, 0.2);
+            margin-top: 48px;
+            box-sizing: border-box;
+        }
+
+        .footer-content {
+            font-family: 'Jost', sans-serif;
+            font-size: 0.72rem;
+            color: rgba(255, 255, 255, 0.80);
+            line-height: 1.6;
+            letter-spacing: 0.06em;
+        }
+
+        .footer-title {
+            font-weight: 500;
+            font-size: 0.76rem;
+            display: block;
+            margin-bottom: 6px;
+            color: #C5A059; /* Destaca a assinatura da profissional em ouro */
+        }
+
+        .footer-address-wrapper {
+            margin: 6px 0;
+        }
+
+        .footer-phone-wrapper {
+            margin-top: 8px;
+        }
+
+        .footer-phone-link {
+            font-weight: 500;
+            font-size: 0.78rem;
+        }
+
+        .footer-link {
+            color: rgba(255, 255, 255, 0.8);
+            transition: color 0.2s ease;
+            text-decoration: none;
+        }
+
+        .footer-link:hover {
+            color: #C5A059;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Container Centralizado do Mini Site (Footer embutido no fluxo natural) -->
+    <div class="container-wrapper">
+        
+        <!-- Conteúdo Superior e Centralizado -->
+        <div class="content-container">
+            
+            <div class="logo-container">
+                <img class="logo-img" 
+                     src="img/logotipo-juliana-rosa-estetica-e-depilacao-a-laser.png" 
+                     alt="Logotipo oficial de Juliana Rosa Estética Avançada e Depilação a Laser" 
+                     id="logoImg" 
+                     onerror="handleLogoFallback()">
+            </div>
+
+            <!-- H1 Estratégico Otimizado para SEO Local de Estética -->
+            <h1>
+                Estética Avançada e Depilação a Laser em Mogi das Cruzes
+            </h1>
+
+            <!-- Divisor Sutil Ouro -->
+            <div class="clinical-divider"></div>
+
+            <!-- Botão 1: WhatsApp -->
+            <a href="https://wa.me/5511978924414?text=Oi!%20Vim%20pelo%20link%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="action-btn">
+                Falar no WhatsApp
+            </a>
+
+            <!-- Botão 2: Serviços (Accordion Clínico com Acessibilidade WAI-ARIA) -->
+            <div class="accordion-container">
+                <button id="servicesBtn" 
+                        class="action-btn services-btn" 
+                        onclick="toggleServices()" 
+                        aria-expanded="false" 
+                        aria-controls="servicesAccordion">
+                    <span>SERVIÇOS</span>
+                    <span id="servicesArrow" class="arrow-icon">▼</span>
+                </button>
+                
+                <!-- Painel de Serviços com Transição de Altura Suave -->
+                <div id="servicesAccordion" class="accordion-content">
+                    <div class="accordion-inner">
+                        
+                        <!-- Categoria: Depilação a Laser -->
+                        <div class="category-block">
+                            <div class="category-title">DEPILAÇÃO A LASER</div>
+                            <div class="category-text">Sessões rápidas e eficazes para eliminação segura e duradoura dos pelos.</div>
+                        </div>
+
+                        <!-- Categoria: Estética Facial -->
+                        <div class="category-block">
+                            <div class="category-title">ESTÉTICA FACIAL</div>
+                            <div class="category-text">Lifting Facial · Laserterapia ILIB · Tratamentos especializados para rejuvenescimento e saúde da pele.</div>
+                        </div>
+
+                        <!-- Categoria: Estética Corporal -->
+                        <div class="category-block">
+                            <div class="category-title">ESTÉTICA CORPORAL</div>
+                            <div class="category-text">Tratamentos de alta performance para contorno, redução de medidas e firmeza cutânea.</div>
+                        </div>
+
+                        <!-- Categoria: Pós-Operatório Especializado -->
+                        <div class="category-block">
+                            <div class="category-title">PÓS-OPERATÓRIO & GESTANTES</div>
+                            <div class="category-text">Drenagem Linfática Pós-Operatória · Drenagem Linfática para Gestantes · Tapping Pós-Operatório estruturado.</div>
+                        </div>
+
+                        <!-- Botão de Conversão Direta (CTA) dentro do Accordion -->
+                        <a href="https://wa.me/5511978924414?text=Oi!%20Vim%20pelo%20link%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="accordion-cta-btn">
+                            Agendar pelo WhatsApp
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botão 3: Instagram -->
+            <a href="https://www.instagram.com/juliana_rosaestetica/" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="action-btn">
+                INSTAGRAM
+            </a>
+
+            <!-- Botão 4: Como Chegar -->
+            <a href="https://maps.app.goo.gl/YivAZ1FxCSWVGB19A" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="action-btn">
+                Como Chegar
+            </a>
+
+            <!-- Botão 5: Avaliar -->
+            <a href="https://g.page/r/CZsMvo5YftUvEBM/review" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="action-btn">
+                Avalie no Google
+            </a>
+
+        </div>
+
+        <!-- Rodapé do Site com Identidade NAP Atualizada -->
+        <footer>
+            <div class="footer-content">
+                <span class="footer-title">Juliana Rosa · Estética Avançada</span>
+                <div class="footer-address-wrapper">
+                    <a class="footer-link" 
+                       href="https://maps.app.goo.gl/YivAZ1FxCSWVGB19A" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        R. Sen. Dantas, 582 – Centro<br>
+                        Mogi das Cruzes – SP · CEP 08710-690
+                    </a>
+                </div>
+                <div class="footer-phone-wrapper">
+                    <a class="footer-link footer-phone-link" href="tel:+5511978924414">
+                        (11) 97892-4414
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        // Função para Abrir/Fechar o Acordeão de Serviços de maneira fluida e gerenciar estados ARIA
+        function toggleServices() {
+            const accordion = document.getElementById('servicesAccordion');
+            const arrow = document.getElementById('servicesArrow');
+            const btn = document.getElementById('servicesBtn');
+            
+            if (accordion.classList.contains('open')) {
+                accordion.classList.remove('open');
+                accordion.style.maxHeight = '0px';
+                arrow.style.transform = 'rotate(0deg)';
+                btn.setAttribute('aria-expanded', 'false');
+            } else {
+                accordion.classList.add('open');
+                // Atribui o scrollHeight para garantir transição suave até o tamanho total real
+                accordion.style.maxHeight = accordion.scrollHeight + 'px';
+                arrow.style.transform = 'rotate(180deg)';
+                btn.setAttribute('aria-expanded', 'true');
+            }
+        }
+
+        // Fallback dinâmico sofisticado inspirado na monograma JR e gradientes dourados reais
+        function handleLogoFallback() {
+            const logo = document.getElementById('logoImg');
+            if (logo) {
+                // Gera dinamicamente um monograma de texto transparente baseado na logo original com tons em gradiente
+                logo.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120" width="100%25" height="100%25"><defs><linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="%23C5A059"/><stop offset="50%" stop-color="%23E5C07B"/><stop offset="100%" stop-color="%239A7B3E"/></linearGradient></defs><text x="150" y="45" font-family="Cormorant Garamond, serif" font-size="44" fill="url(%23gold)" font-weight="bold" text-anchor="middle" letter-spacing="3">JR</text><text x="150" y="80" font-family="Cormorant Garamond, serif" font-size="20" fill="%232E2925" text-anchor="middle" letter-spacing="1" font-weight="bold">Juliana Rosa</text><text x="150" y="102" font-family="Jost, sans-serif" font-size="9" fill="%239A7B3E" text-anchor="middle" letter-spacing="3" font-weight="500">ESTÉTICA AVANÇADA</text></svg>';
+            }
+        }
+    </script>
+</body>
+</html>
